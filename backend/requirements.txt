@@ -7,3 +7,4 @@ yt-dlp
 spotipy
 python-socketio
 requests
+pytest
