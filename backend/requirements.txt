@@ -1,0 +1,9 @@
+librosa
+scipy
+numpy
+flask  # or fastapi
+sqlalchemy
+yt-dlp
+spotipy
+python-socketio
+requests
