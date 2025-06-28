@@ -46,7 +46,7 @@ shazamX/
 
 ---
 
-This backend is designed to be paired with [`shazamX-ui`](../shazamX-ui). Make sure both are running locally to complete the full audio recognition pipeline.
+This backend is designed to be paired with [`shazamX-ui`](https://github.com/yashwant1810/shazamX-ui). Make sure both are running locally to complete the full audio recognition pipeline.
 
 ---
 
