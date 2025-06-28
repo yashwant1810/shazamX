@@ -8,3 +8,5 @@ spotipy
 python-socketio
 requests
 pytest
+sqlalchemy
+python-dotenv
