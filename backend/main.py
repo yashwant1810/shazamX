@@ -6,7 +6,6 @@ from backend.recognition.match_snippet import match_snippet
 
 app = FastAPI()
 
-# Allow frontend on localhost:5173
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],

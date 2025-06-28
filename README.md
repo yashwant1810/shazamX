@@ -48,3 +48,35 @@ shazamX/
 
 This backend is designed to be paired with [`shazamX-ui`](../shazamX-ui). Make sure both are running locally to complete the full audio recognition pipeline.
 
+---
+
+## Exposing the Backend via ngrok
+
+To test your backend from a deployed frontend (like on Vercel), you can expose your local FastAPI server using [ngrok](https://ngrok.com/):
+
+1. Start the backend server:
+   ```bash
+   uvicorn backend.main:app --host 0.0.0.0 --port 8000
+   ```
+
+2. In another terminal, run:
+   ```bash
+   ngrok http 8000
+   ```
+
+3. Use the generated `https://xyz.ngrok-free.app` URL as the `VITE_BACKEND_URL` in your frontend environment variables.
+
+Make sure your FastAPI app has CORS enabled:
+
+```python
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Or replace with your frontend domain
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+```
+
