@@ -1,5 +1,7 @@
 # shazamX — Audio Fingerprinting + Recognition System (Backend)
 
+<img src="https://raw.githubusercontent.com/yashwant1810/shazamX-ui/main/public/BlackSimpleMusicStudioLogo.png" alt="shazamX logo" width="150"/>
+
 ## Description
 
 `shazamX` is a local-first Shazam-like audio recognition engine. It fingerprints full-length songs, stores their hashes in a local SQLite database, and matches short audio snippets recorded in the browser. It’s optimized for lightweight setups and runs entirely offline.
