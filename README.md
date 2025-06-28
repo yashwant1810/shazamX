@@ -11,7 +11,6 @@
 - Spectrogram-based fingerprinting using [`librosa.stft`](https://librosa.org/doc/latest/generated/librosa.stft.html)
 - Peak pair hashing based on anchor-target models from [Shazam's original paper](https://www.ee.columbia.edu/~dpwe/papers/Wang03-shazam.pdf)
 - Custom audio fingerprint comparison using [NumPy broadcasting](https://numpy.org/doc/stable/user/basics.broadcasting.html)
-- Matching is based on [offset clustering](https://en.wikipedia.org/wiki/Shazam_(service)#Algorithm) to reduce false positives
 - Uses `FastAPI` for the minimal `/match` API endpoint
 - Metadata sourced using [Spotify Web API](https://developer.spotify.com/documentation/web-api/)
 - Audio downloaded from YouTube via [`yt-dlp`](https://github.com/yt-dlp/yt-dlp)
@@ -24,6 +23,7 @@
 - [`SQLAlchemy`](https://www.sqlalchemy.org/) as the ORM
 - [`uvicorn`](https://www.uvicorn.org/) for ASGI server
 - [`python-dotenv`](https://github.com/theskumar/python-dotenv) for `.env` loading
+- [`ngrok`](https://ngrok.com/docs/getting-started) for exposing server online for hosting purposes
 
 ## Project Structure
 
