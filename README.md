@@ -4,7 +4,7 @@
 
 ## Description
 
-`shazamX` is a local-first Shazam-like audio recognition engine. It fingerprints full-length songs, stores their hashes in a local SQLite database, and matches short audio snippets recorded in the browser. It’s optimized for lightweight setups and runs entirely offline.
+`shazamX` is a Shazam-like audio recognition engine. It fingerprints full-length songs, stores their hashes in a local SQLite database, and matches short audio snippets recorded in the browser. It’s optimized for lightweight setups and runs entirely offline which can also be exposed online using ngrok.
 
 ## Key Techniques & Features
 
